@@ -163,6 +163,11 @@ p {
 }
 
 @media (max-width: 480px) {
+  body {
+    background-image: url("iphone.jpg");
+    background-position: center top;
+  }
+
   .card {
     padding: 26px 20px;
   }
