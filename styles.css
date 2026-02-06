@@ -92,6 +92,7 @@ p {
 }
 
 .btn {
+  --scale: 1;
   border: none;
   padding: 12px 26px;
   border-radius: 999px;
@@ -101,6 +102,8 @@ p {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   color: white;
   min-width: 120px;
+  transform: translateY(0) scale(var(--scale));
+  transform-origin: center;
 }
 
 .btn:focus-visible {
@@ -120,7 +123,7 @@ p {
 }
 
 .btn:hover {
-  transform: translateY(-2px);
+  transform: translateY(-2px) scale(var(--scale));
 }
 
 .floating {

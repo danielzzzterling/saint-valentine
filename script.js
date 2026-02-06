@@ -12,10 +12,14 @@ const messages = [
 ];
 
 let messageIndex = 0;
+let yesScale = 1;
+const yesScaleStep = 0.06;
 
 yesBtn.addEventListener("click", () => {
   messageIndex = (messageIndex + 1) % messages.length;
   romanticText.textContent = messages[messageIndex];
+  yesScale = Math.min(1.8, yesScale + yesScaleStep);
+  yesBtn.style.setProperty("--scale", yesScale.toFixed(2));
 });
 
 function moveNoButton() {
