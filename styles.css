@@ -165,7 +165,8 @@ p {
 @media (max-width: 900px) {
   body {
     background-image: url("iphone.jpg");
-    background-position: center top;
+    background-position: center 500%;
+
   }
 
   .card {
