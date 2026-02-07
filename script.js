@@ -23,7 +23,7 @@ if (blankCard) {
   blankCard.setAttribute("hidden", "");
 }
 
-const targetUtcMs = Date.UTC(2026, 1, 7, 14, 30, 0);
+const targetUtcMs = Date.UTC(2026, 1, 14, 5, 0, 0);
 let countdownTimer = null;
 
 function startCountdown() {
